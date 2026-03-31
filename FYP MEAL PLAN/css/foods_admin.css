@@ -1,0 +1,99 @@
+/* css/foods_admin.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                url('../images/foodcatalogue.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 50px 0;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Box */
+.header-box-gradient {
+    background:#656769;
+    padding: 50px 20px; 
+    border-radius: 20px ;
+    text-align: center;
+    color: rgb(255, 255, 255) ;
+    margin-bottom: 50px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+.header-box-gradient h1 {
+    font-size: 42px !important;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container Butang Kategori */
+.category-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Butang Utama (Sarapan, Tengahari, Malam) */
+.btn-main-action {
+    width: 90%;
+    max-width: 600px;
+    padding: 25px 40px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    background: rgba(44, 62, 80, 0.85);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.btn-main-action:hover {
+    background: #4ca1af;
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    border-color: white;
+}
+
+/* Container Butang Back - REPAIRED */
+.nav-actions-center {
+    margin-top: 60px;
+    text-align: center; /* Bagi butang duduk tengah */
+    width: 100%;
+}
+
+/* Butang Back - REPAIRED */
+.btn-link-back {
+    display: inline-block;
+    padding: 15px 40px;
+    font-weight: 700;
+    color: white;
+    background: #102a3f;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-link-back:hover {
+    background:#444141;
+    transform: translateY(-5px);
+    color: white;
+}

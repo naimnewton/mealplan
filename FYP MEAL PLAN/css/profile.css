@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+body {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* 1. Profile Header */
+.profile-header {
+    text-align: center;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    border-bottom: 4px solid #10b981;
+    margin-bottom: 30px;
+}
+
+.avatar-box {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.profile-header h1 { 
+    font-size: 26px; 
+    font-weight: 800; 
+    color: #ffffff; 
+    margin: 10px 0 5px 0;
+}
+
+.profile-header p { 
+    font-size: 14px; 
+    color: #94a3b8; 
+    font-weight: 600;
+}
+
+/* 2. Tajuk Sejarah */
+.history-section h3 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #10b981;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 3. History Card */
+.history-card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #334155;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.history-card:hover {
+    border-color: #10b981;
+    background: #243147;
+    transform: translateY(-2px);
+}
+
+.hist-date {
+    background: #0f172a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 20px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.hist-date span { 
+    display: block; 
+    font-weight: 800; 
+    color: #ffffff; 
+    font-size: 18px; 
+}
+
+.hist-date small { 
+    font-size: 11px; 
+    color: #10b981; 
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hist-details {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.hist-item { text-align: left; }
+
+.hist-item small { 
+    display: block; 
+    font-size: 11px; 
+    color: #94a3b8; 
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.hist-item strong { 
+    font-size: 18px; 
+    color: #ffffff; 
+    font-weight: 800;
+}
+
+/* Warna Khusus untuk Nilai */
+.kcal-val { color: #facc15 !important; }
+.bmi-val { color: #38bdf8 !important; }
+
+/* 4. Navigation */
+.nav-footer { text-align: center; margin-top: 40px; }
+
+.btn-back {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 12px 30px;
+    background: #10b981;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-back:hover { 
+    background: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.no-data { 
+    text-align: center; 
+    font-size: 14px; 
+    color: #64748b; 
+    padding: 30px; 
+    background: #1e293b;
+    border-radius: 12px;
+}

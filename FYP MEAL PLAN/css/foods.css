@@ -1,0 +1,58 @@
+/* Katalog Makanan Modern Style */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.food-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.food-card:hover { 
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.food-info { 
+    padding: 25px; 
+}
+
+.category-tag {
+    background: #f0fdf4;
+    color: #10b981; /* Warna Emerald Green */
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.food-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 12px 0 5px 0;
+    color: #0f172a; /* Warna Hitam Slate */
+}
+
+.kcal-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kcal-val {
+    color: #10b981;
+    font-weight: 800;
+    font-size: 16px;
+}

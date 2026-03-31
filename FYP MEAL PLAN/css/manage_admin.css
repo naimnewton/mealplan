@@ -1,0 +1,113 @@
+/* css/manage_foods.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                url('../images/foodcatalogue.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 40px;
+    color: white;
+}
+
+.dashboard-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-box-gradient {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card {
+    background: rgba(82, 74, 74, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Jadual Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    text-align: left;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid white;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.action-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.edit-link { color: #ffffff; }
+.delete-link { color: #e7200a; }
+
+.edit-link:hover, .delete-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Butang Tambah Makanan */
+.btn-add {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Butang Kembali (Repair) */
+.btn-back-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-link-back {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background: #102a3f;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-link-back:hover {
+    background:#444141;
+    transform: translateY(-5px);
+}

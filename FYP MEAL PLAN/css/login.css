@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+              url('../images/foodcatalogue.jpeg'); 
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+.system-title-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.main-title {
+    font-size: 30px; /* Besarkan sikit */
+    font-weight: 800;
+    color: rgb(255, 253, 253); /* Warna hijau tema MyMealPlan */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.sub-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 8px;
+    letter-spacing: 1px;
+
+}
+
+
+/* =============== LOGIN / REGISTER CONTAINER =============== */
+.container {
+  width: 380px;
+  padding: 35px;
+  border-radius: 20px; /* Lengkungan lebih lembut */
+  background: rgba(20, 20, 20, 0.1); /* Kurangkan opacity untuk efek glass lebih padu */
+  backdrop-filter: blur(10px); /* Tambah blur */
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+  color: #fff;
+  text-align: center;
+}
+
+/* ... (Bahagian lain seperti input, button, dan a kekal sama) ... */
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* =============== INPUT GROUP =============== */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+/* Style untuk dropdown select */
+select option {
+  background: #1a1a1a; /* Warna background list option */
+  color: #fff;
+}
+
+/* Stop Autofill */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgba(0,0,0,0.5) inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* =============== BUTTON =============== */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #19405f, #0f4557);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #e4e4e4, #ffffff);
+  transform: translateY(-2px); /* Butang naik sikit bila hover */
+  box-shadow: 0 5px 15px rgba(34, 228, 172, 0.4);
+}
+
+/* =============== PAUTAN =============== */
+a {
+  text-decoration: none;
+  color: #eeeeee; /* Guna warna hijau aqua supaya match dengan button */
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* --- Tambahan untuk Error & Footer --- */
+.error-msg {
+    color: #ff0000;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-footer p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.link-register {
+    color: #f7f7f7;
+     font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.link-forgot {
+    color: #f3f8ff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-forgot:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

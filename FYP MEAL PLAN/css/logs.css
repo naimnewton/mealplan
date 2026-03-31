@@ -1,0 +1,64 @@
+/* ========== LAYOUT & TYPOGRAPHY ========== */
+.logs-title {
+    margin-bottom: 20px; 
+    color: #ffffff; 
+    text-align: center;
+}
+
+.back-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* ========== BUTTON BACK (Standard) ========== */
+.btn-back {
+    background: #102a3f;
+    color: #fff6f6 !important;
+    text-decoration: none !important;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #1c4a6e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(16, 42, 63, 0.4);
+    color: #ffffff;
+}
+
+/* ========== TABLE STYLING ========== */
+.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.log-table th {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 15px;
+}
+
+.log-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: top;
+}
+
+/* Warna Teks Table */
+.time-col { color: #cbd5e1; }
+.name-col { color: #ffffff; }
+.id-subtext { color: #64748b; font-size: 0.85rem; }
+.activity-col { color: #10b981; font-weight: 500; }
+
+.no-data {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}

@@ -1,0 +1,141 @@
+/* Import Font Premium */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap');
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+body {
+    /* Background dengan overlay yang lebih gelap & solid supaya tulisan nampak jelas */
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../images/dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 900px; 
+}
+
+/* 1. Header Section - Lebih Compact & Solid */
+.header-user {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.07); /* Solid sikit */
+    backdrop-filter: blur(15px);
+    padding: 30px 20px; /* Kecilkan padding */
+    border-radius: 30px; 
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.profile-img { 
+    width: 90px !important; /* Kecilkan sikit */
+    height: 90px !important; 
+    border-radius: 50%; 
+    border: 3px solid #10b981; 
+    margin-bottom: 15px; 
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    background: #0f172a;
+}
+
+.user-info h1 { 
+    font-size: 28px; /* Kecilkan saiz h1 */
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+    color: #ffffff; /* Tukar jadi Putih Solid bagi jelas */
+}
+
+.user-info p { 
+    font-size: 13px; 
+    color: #10b981; /* Warna Hijau Emerald bagi kontra */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* 2. Menu Grid - Card Besar & Jelas */
+.menu-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.menu-card { 
+    background: #b6b1b1; /* Tukar Card jadi Putih Solid */
+    color: #0f172a; /* Tulisan Gelap supaya nampak Jelas gila */
+    aspect-ratio: 1.5 / 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.menu-card:hover { 
+    transform: translateY(-8px); 
+    background: #f8fafc; /* Warna kelabu sangat cair bila hover */
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.3);
+}
+
+.menu-card .icon-box {
+    width: 70px; 
+    height: 70px;
+    background: #f1f5f9; /* Background icon yang cerah */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px; 
+    margin-bottom: 15px;
+    color: #10b981;
+}
+
+.menu-card h3 { 
+    font-size: 22px; 
+    font-weight: 800;
+    color: #0f172a; /* Tulisan Tajam */
+    margin-bottom: 5px;
+}
+
+.menu-card p { 
+    font-size: 14px; 
+    color: #64748b; /* Warna kelabu gelap untuk description */
+    font-weight: 500;
+    text-align: center;
+}
+
+/* 3. Logout */
+.logout-btn {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.logout-btn:hover { color: #ef4444; }
+
+@media (max-width: 600px) {
+    .menu-grid { grid-template-columns: 1fr; }
+}
